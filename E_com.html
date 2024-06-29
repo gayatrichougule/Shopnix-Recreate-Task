@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Setup</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <body style="background-image: url('c:\BTech\Task\BACK_themee.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div style="background-color: rgba(210, 35, 35, 0.8); border: 1px solid #5b1818; padding: 20px; max-width: 400px; margin: 0 auto; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    
+    <div class="container">
+        <section id="step1" class="step">
+            <h2> Select Theme</h2>
+
+            <div class="themes">
+                <div class="theme" data-theme="bags">
+                    <img src="c:\BTech\Task\Bag_Theme.jpg" alt="Bags theme">
+                    <h2>Bags Theme</h2>
+                    <button class="apply-button">Apply</button>
+                    <div class="selected-icon" style="display: none;">Theme Selected</div>
+                </div>
+                <div class="theme" data-theme="flex">
+                    <img src="c:\BTech\Task\Flex_theme.jpg" alt="Flex theme">
+                    <h2>Flex Theme</h2>
+                    <button class="apply-button">Apply</button>
+                    <div class="selected-icon" style="display: none;">Theme Selected</div>
+
+                </div>
+                <div class="theme" data-theme="chic">
+                    <img src="c:\BTech\Task\Chic_theme.jpg" alt="Chic theme">
+                    <h2>Chic Theme</h2>
+                    <button class="apply-button">Apply</button>
+                    <div class="selected-icon" style="display: none;">Theme Selected</div>
+
+                </div>
+            </div>
+            <button class="next-button">Next</button>
+        </section>
+
+        <section id="step2" class="step">
+            <h2>Let's add a type, category and Sub-Category</h2>
+            <form id="category-form">
+                <label for="product-type">Add a product type</label>
+                <input type="text" id="product-type" placeholder="e.g. books">
+
+                <label for="category">Add a category (optional)</label>
+                <input type="text" id="category" placeholder="e.g. Academic books">
+
+                <label for="subcategory">Add a sub-category (optional)</label>
+                <input type="text" id="subcategory" placeholder="e.g. medical books">
+
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="next-button">Next</button>
+            </form>
+        </section>
+
+        <section id="step3" class="step">
+            <h2>Let's add your first Product</h2>
+            <p> Basic Details</p>
+            <form id="product-form">
+                <label for="product-name">Product name</label>
+                <input type="text" id="product-name" placeholder="e.g. anatomy book">
+
+                <label for="product-description">Product Description</label>
+                <textarea id="product-description" placeholder="Product Description"></textarea>
+
+                <label for="product-image">Add Image(s)</label>
+                <input type="file" id="product-image">
+
+                <label for="product-sku">
+                    <input type="checkbox" id="product-sku"> this product has an SKU code
+                </label>
+                <input type="text" id="sku-code" placeholder="e.g. PROD0001">
+
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="next-button">Next</button>
+            </form>
+        </section>
+
+        <section id="step4" class="step">
+            <h2>Let's add you first Product</h2>
+            <p>Basic Details</p>
+            <form id="pricing-form">
+                <label for="product-name">Product name</label>
+                <input type="text" id="product-name" placeholder="e.g. anatomy book">
+
+                <label for="product-description">Product Description</label>
+                <textarea id="product-description" placeholder="Product Description"></textarea>
+
+                <label for="product-image">Add Image(s)</label>
+                <input type="file" id="product-image">
+
+                <label for="product-sku">
+                    <input type="checkbox" id="product-sku"> this product has an SKU code
+                </label>
+                <input type="text" id="sku-code" placeholder="e.g. PROD0001">
+
+                <h3>Pricing Details</h3>
+                <label for="gst-included">
+                    <input type="checkbox" id="gst-included"> price inclusive of GST
+                </label>
+
+                <label for="net-price">Net price</label>
+                <input type="text" id="net-price" placeholder="e.g. 80">
+
+                <label for="list-price">List price</label>
+                <input type="text" id="list-price" placeholder="e.g. 100">
+
+                <label for="discount-percentage">Discount percentage</label>
+                <input type="text" id="discount-percentage" placeholder="e.g. 20">
+
+                <label for="gst-rate">GST rate</label>
+                <input type="text" id="gst-rate" placeholder="e.g. 20">
+
+                <label for="shipping-charges">Shipping charges (if any)</label>
+                <input type="text" id="shipping-charges" placeholder="e.g. 40">
+
+                <label for="stock-level">Stock level</label>
+                <input type="text" id="stock-level" placeholder="e.g. 110">
+
+                <button type="button" class="previous-button">Previous</button>
+                <button type="button" class="submit-button">Submit</button>
+            </form>
+        </section>
+
+        <section id="submission" class="step">
+            <h2>Data has been submitted</h2>
+            <p id="submitted-data"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
